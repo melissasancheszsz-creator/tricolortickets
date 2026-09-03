@@ -179,7 +179,7 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
             font-weight: 500;
         }
 
-        /* MATCH CENTER COM ESCUDOS OFICIAIS VETORIAIS */
+        /* MATCH CENTER COM ESCUDOS OFICIAIS */
         .match-card {
             padding: 20px 18px;
         }
@@ -216,8 +216,13 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
             display: flex;
             align-items: center;
             justify-content: center;
-            filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.6));
+            filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.6));
             transition: transform 0.2s ease;
+        }
+        .team-crest-wrap svg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
         .team-crest-wrap:hover {
             transform: scale(1.08);
@@ -504,6 +509,9 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
             letter-spacing: -0.5px;
             text-align: center;
             margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .ticket-hero-sub {
             font-size: 12px;
@@ -821,7 +829,7 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
         }
 
         /* ====================================================================== */
-        /* MENU CONVIDAR UM TRICOLOR (REFERRAL VIRAL & URGÊNCIA)                 */
+        /* MENU CONVIDAR UM TRICOLOR (DIRECIONANDO PARA O NÚMERO 11 98242-9623)   */
         /* ====================================================================== */
         .invite-card {
             padding: 22px 20px;
@@ -851,6 +859,9 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
             color: #fff;
             letter-spacing: -0.3px;
             margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .invite-desc {
             font-size: 12px;
@@ -941,7 +952,7 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
             </div>
         </div>
 
-        <!-- MATCH CENTER (SÃO PAULO X BOCA JUNIORS COM ESCUDOS SVG VETORIAIS) -->
+        <!-- MATCH CENTER (SÃO PAULO X BOCA JUNIORS COM ESCUDOS OFICIAIS VETORIAIS) -->
         <div class="glass-card match-card">
             <div class="comp-tag">
                 <span>🏆</span>
@@ -950,17 +961,49 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
             <div class="teams-row">
                 <div class="team-box">
                     <div class="team-crest-wrap">
-                        <!-- ESCUDO VETORIAL OFICIAL SÃO PAULO FC -->
-                        <svg viewBox="0 0 100 100" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-                            <polygon points="26,10 28,4 30,10 36,10 31,14 33,20 28,16 23,20 25,14 20,10" fill="#FFC72C"/>
-                            <polygon points="50,7 52,1 54,7 60,7 55,11 57,17 52,13 47,17 49,11 44,7" fill="#E41B17"/>
-                            <polygon points="74,10 76,4 78,10 84,10 79,14 81,20 76,16 71,20 73,14 68,10" fill="#FFC72C"/>
-                            <path d="M14,23 L86,23 L86,56 Q86,88 50,98 Q14,88 14,56 Z" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
-                            <path d="M14,23 L86,23 L86,39 L14,39 Z" fill="#000000"/>
-                            <text x="50" y="35" font-family="'Inter', Arial, sans-serif" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">SPFC</text>
-                            <polygon points="17,45 49,45 49,78" fill="#E41B17"/>
-                            <polygon points="83,45 51,45 51,78" fill="#000000"/>
-                        </svg>
+                        
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg viewBox="0 0 350 348.69"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="350"
+   height="348.69"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <g
+     id="layer1">
+    <g
+       transform="matrix(1.5843754,0,0,1.5843754,-104.87525,-536.5882)"
+       id="g3355">
+      <path
+         d="M 73.294118,345.77395 L 280,345.77395 L 280,425.6563 L 176.64706,551.6563 L 73.294118,425.6563 L 73.294118,345.77395 z"
+         id="path2507"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.57790887;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         width="186.52942"
+         height="54.509979"
+         x="83.382355"
+         y="356.81308"
+         id="rect3279"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         d="M 83.79413,421.12689 L 160.38236,421.12689 L 160.38236,515.00924 L 83.79413,421.12689 z"
+         id="path3281"
+         style="fill:#fe0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         d="M 269.08824,421.12689 L 192.50001,421.12689 L 192.50001,515.00924 L 269.08824,421.12689 z"
+         id="path3283"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         d="M 231.84559,365.9375 C 226.03807,365.9375 224.92831,369.21527 224.92831,371.2886 L 224.92831,396.21875 C 224.74111,400.58138 228.28955,402.78125 231.56618,402.78125 L 250.21324,402.78125 C 254.2318,402.78125 258.39706,400.56635 258.39706,395.65625 L 258.39706,388.65625 L 249.64706,388.65625 L 249.64706,391.125 C 249.88082,392.97758 248.99922,394.2495 247.59191,394.1875 L 235.83456,394.1875 C 234.11963,394.29778 232.49162,394.31029 232.92831,392 L 232.92831,375.84375 C 233.27437,374.71605 232.04963,373.06474 235.39706,372.9375 L 248.05331,372.9375 C 248.81009,373.35467 249.95398,372.61049 249.95956,375.28125 L 250.08456,378.1875 L 258.24081,378.1875 L 258.24081,371.23897 C 258.24081,367.20514 254.76083,365.9375 251.62868,365.9375 L 231.84559,365.9375 z M 163.74265,365.9375 L 138.14706,365.9375 L 138.14706,402.5 L 147.04188,402.5 L 147.04188,389.01105 L 163.68248,389.01105 C 167.14637,389.01105 170.88715,387.36158 170.88715,382.6875 L 170.88715,372.0625 C 170.88715,369.11287 168.62371,365.988 163.74265,365.9375 z M 99.865812,365.9375 C 96.428872,366.20758 94.998092,367.80156 95.053312,370.59375 L 95.053312,382.68902 C 95.053312,384.85923 97.021632,386.90701 102.12307,386.90701 L 117.61581,386.90701 C 118.35637,386.90701 118.77206,387.28166 118.77206,388.43561 L 118.77206,392.3125 C 118.77206,393.46752 118.35905,394.34375 117.38904,394.34375 L 94.897062,394.34375 L 94.897062,402.1875 L 122.22137,402.1875 C 126.27237,402.1875 127.80331,400.10982 127.80331,397.25152 L 127.80331,384 C 127.80331,379.05515 121.76035,379.34375 119.52812,379.34375 L 105.61467,379.34375 C 104.36355,379.46987 103.16448,378.30651 103.27206,377.07393 L 103.27206,374.47828 C 103.1403,373.52256 104.05487,372.80469 105.27206,372.8125 L 127.80331,372.78125 L 127.80331,365.9375 L 99.865812,365.9375 z M 181.83456,365.9375 L 181.83456,402.625 L 189.95956,402.625 L 189.95956,388.9375 L 208.30331,388.9375 L 208.30331,380.9375 L 190.11581,380.9375 L 190.11581,372.78125 L 214.58456,372.78125 L 214.58456,365.9375 L 181.83456,365.9375 z M 147.04188,373.96875 L 160.67831,373.96875 C 161.68856,373.96875 162.83456,374.04319 162.83456,376.00915 L 162.83456,379.35846 C 162.83456,381.37678 161.77892,381.45221 160.70956,381.45221 L 147.04188,381.45221 L 147.04188,373.96875 z"
+         id="path3338"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
+
                     </div>
                     <span class="team-name">SÃO PAULO</span>
                     <span class="team-side">MANDANTE</span>
@@ -968,18 +1011,110 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                 <div class="vs-badge">VS</div>
                 <div class="team-box">
                     <div class="team-crest-wrap">
-                        <!-- ESCUDO VETORIAL OFICIAL BOCA JUNIORS -->
-                        <svg viewBox="0 0 100 100" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16,18 L84,18 L84,55 Q84,88 50,98 Q16,88 16,55 Z" fill="#002B66" stroke="#FFC72C" stroke-width="3.5"/>
-                            <path d="M16,42 L84,42 L84,62 L16,62 Z" fill="#FFC72C"/>
-                            <text x="50" y="57" font-family="'Inter', Arial, sans-serif" font-size="12" font-weight="900" fill="#002B66" text-anchor="middle" letter-spacing="1.5">CABJ</text>
-                            <circle cx="50" cy="27" r="2.5" fill="#FFC72C"/>
-                            <circle cx="37" cy="31" r="2.5" fill="#FFC72C"/>
-                            <circle cx="63" cy="31" r="2.5" fill="#FFC72C"/>
-                            <circle cx="50" cy="78" r="2.5" fill="#FFC72C"/>
-                            <circle cx="37" cy="72" r="2.5" fill="#FFC72C"/>
-                            <circle cx="63" cy="72" r="2.5" fill="#FFC72C"/>
-                        </svg>
+                        
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="49.165127mm"
+   height="58.100864mm"
+   viewBox="0 0 49.165127 58.100864"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="cabj.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#00ffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="128.46132"
+     inkscape:cy="6.9397703"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0.5"
+     fit-margin-left="0.5"
+     fit-margin-right="0.5"
+     fit-margin-bottom="0.5"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-71.84461,-92.568618)">
+    <g
+       id="g48"
+       transform="matrix(0.63374987,0,0,0.63374987,72.344746,93.068618)">
+      <path
+         d="M 73.7,15.9 56.9,3.5 56.2,3 55.5,3.7 v 0 C 55.2,4 49.4,9.5 38.7,9.5 h -0.1 v 0 0 H 38.5 C 33,9.5 28.7,8 25.9,6.5 24.5,5.8 23.4,5 22.7,4.5 22.3,4.2 22.1,4 21.9,3.8 L 21.7,3.6 v 0 0 L 21.1,2.9 20.4,3.4 3.3,15.7 2.9,16 v 0.5 0.3 c 0,26.4 8.7,43.9 17.4,54.8 8.7,11 17.4,15.3 17.5,15.3 l 0.5,0.2 0.5,-0.2 c 0.1,0 8.9,-4.3 17.7,-15.2 8.8,-10.9 17.6,-28.5 17.6,-55 v -0.5 z"
+         id="Fill-97"
+         inkscape:connector-curvature="0"
+         style="fill:#103f79" />
+      <path
+         d="M 37.8,86.1 C 37.8,86.1 3.4,69.3 3.5,17 L 20.4,4.7 c 0,0 6.1,6.2 17.6,6.2 h 0.1 c 11.5,0 17.6,-6.1 17.6,-6.1 L 72.5,17.2 C 72.3,69.5 37.8,86.1 37.8,86.1 Z M 74.5,14.3 57.8,1.9 55.3,0.1 53.1,2.2 v 0 C 53,2.4 47.8,7.3 38.1,7.3 H 38 c -9.7,0 -14.9,-5 -15.1,-5.2 v 0 L 20.8,0 18.3,1.8 1.5,14.1 0,15.2 V 17 c -0.1,54 34.8,71.6 36.2,72.3 l 0.7,0.4 0.9,0.4 0.9,-0.4 0.7,-0.3 C 40.9,88.7 75.8,71.2 76,17.3 v -1.8 z"
+         id="Fill-99"
+         inkscape:connector-curvature="0"
+         style="fill:#f3b229" />
+      <path
+         d="m 38,68.9 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.8 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m 8.1,0.9 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.8 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m -16.2,0 0.5,1.5 H 32 l -1.3,1 0.5,1.5 -1.3,-0.8 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m 4.4,3.7 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,1 0.5,-1.5 -1.3,-1 h 1.6 z m 7.4,0 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m -3.7,3.9 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.8 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m 0,-16.7 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m -7.6,0.4 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.4,1 0.5,-1.5 -1.3,-1 h 1.6 z m 15.3,0 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m -23,0.4 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m 30.6,0 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,1 0.5,-1.5 -1.3,-1 h 1.6 z m -27.4,4.6 0.5,1.5 H 28 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m 24.2,0 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m -8.1,-1 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m -8,0 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m -7,-8.1 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.4,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m 22,0 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m -29.4,0.4 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m 36.8,0 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m -22.1,-1.3 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,1 0.5,-1.5 -1.3,-1 h 1.6 z m 7.4,0 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m 17.8,-3.7 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 H 59 Z m -43,0 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 H 16 Z m 35.8,0 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,1 0.5,-1.5 -1.3,-1 h 1.6 z m -28.6,0 0.5,1.5 h 1.6 l -1.3,1 0.4,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m 7.1,-0.4 0.5,1.5 h 1.6 l -1.3,1 0.4,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m 14.4,0 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m -7.2,-0.4 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.8 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m 17.4,-4.2 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m 6.1,0 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 H 61 Z m -47,0 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 H 14 Z m 33.9,0 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m -27.8,0 0.5,1.5 h 1.6 l -1.3,1 0.4,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 H 20 Z m 7,0 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 h 1.6 z m 13.9,0 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 H 41 Z m -7,0 0.5,1.5 h 1.6 l -1.3,1 0.5,1.5 -1.3,-0.9 -1.3,0.9 0.5,-1.5 -1.3,-1 H 34 Z"
+         id="Combined-Shape"
+         inkscape:connector-curvature="0"
+         style="fill:#f3b229" />
+      <polygon
+         points="14.6,41.6 15.1,42 17.2,42.1 17.7,41.6 17.7,39.8 21.8,39.8 21.8,43.1 19.4,45.5 12.8,45.5 10.4,43 10.5,32.7 12.9,30.3 19.5,30.3 21.9,32.8 21.8,36.2 17.7,36.1 17.7,34.2 17.3,33.7 15.1,33.7 14.6,34.2 "
+         id="Fill-173"
+         style="fill:#f3b229" />
+      <path
+         d="m 30.4,38.5 h 1.9 l -1,-2.4 z m 5.1,-8.2 v 3.4 H 34.7 L 38,42 h 1 v 3.4 H 33.2 V 42 h 0.5 l -0.2,-0.7 h -4 L 29.1,42 h 0.5 v 3.4 H 23.8 V 42 h 0.9 l 3.4,-8.3 h -0.7 v -3.4 z"
+         id="Fill-175"
+         inkscape:connector-curvature="0"
+         style="fill:#f3b229" />
+      <path
+         d="m 48.2,34.2 -0.5,-0.5 h -2 v 2.2 h 2 l 0.5,-0.5 z m 0,5.6 -0.5,-0.5 h -2 V 42 h 2 l 0.5,-0.5 z m 4,-1.2 V 43 l -2.3,2.4 h -9 V 42 h 0.9 v -8.3 h -0.9 v -3.4 h 9 l 2.3,2.4 v 3.9 l -1,1 z"
+         id="Fill-177"
+         inkscape:connector-curvature="0"
+         style="fill:#f3b229" />
+      <polygon
+         points="58.3,39.4 58.3,41.6 58.8,42 59.9,42.1 60.4,41.6 60.4,33.7 59.1,33.7 59.1,30.3 65.6,30.3 65.5,33.7 64.6,33.7 64.6,43.1 62.2,45.5 56.6,45.5 54.1,43 54.1,39.4 "
+         id="Fill-179"
+         style="fill:#f3b229" />
+      <path
+         d="m 28.3,19.2 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z m -6.5,-0.4 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.4,-1 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z m -13,0 0.5,1.6 h 1.6 l -1.3,1 0.4,1.6 -1.3,-1 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z m 6.5,0 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.3,-1 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z m 19.5,0.4 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z m 6.4,0 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z m 6.5,0 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z m 6.5,-0.4 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.2,-1 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z m 13,0 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.3,-1 -1.3,1 0.4,-1.6 -1.3,-1 h 1.6 z m -6.5,0 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.3,-1 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z M 20.4,8.5 l 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z m 35.2,0 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z m -42,5 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z m 20.9,0.8 0.5,1.5 h 1.6 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.3,0.9 0.5,-1.6 -1.3,-1 H 34 Z m 7,0 0.5,1.5 h 1.6 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.3,0.9 0.5,-1.6 -1.3,-1 H 41 Z m -20.9,-0.4 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.3,0.8 0.5,-1.6 -1.3,-1 h 1.6 z m 6.9,0 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.3,0.8 0.5,-1.6 -1.3,-1 H 27 Z m 34.9,-0.4 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z m -13.9,0.4 0.5,1.5 h 1.6 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.4,0.9 0.5,-1.6 -1.3,-1 h 1.6 z m 6.9,0 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.3,0.8 0.5,-1.6 -1.3,-1 h 1.6 z m -26.8,10.4 0.5,1.5 h 1.6 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z m -6.3,0 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.3,0.8 0.5,-1.6 -1.3,-1 h 1.6 z m -6.3,0 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.3,-1 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z m -6.3,0 0.5,1.6 h 1.6 l -1.3,1 0.4,1.6 -1.3,-0.9 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z m 25.2,0 0.5,1.6 H 37 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z m 6.2,0 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z m 12.6,0 0.5,1.5 h 1.6 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z m 6.3,0 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.3,-1 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z m 6.3,0 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.3,0.8 0.4,-1.6 -1.3,-1 h 1.6 z m -18.9,0 0.5,1.6 h 1.6 l -1.3,1 0.5,1.6 -1.3,-0.9 -1.3,0.9 0.5,-1.6 -1.3,-1 h 1.6 z"
+         id="Combined-Shape_1_"
+         inkscape:connector-curvature="0"
+         style="fill:#f3b229" />
+    </g>
+  </g>
+</svg>
+
                     </div>
                     <span class="team-name" id="opponentName">BOCA JUNIORS</span>
                     <span class="team-side">VISITANTE</span>
@@ -1405,7 +1540,10 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                             </div>
 
                             <div class="ticket-body">
-                                <h2 class="ticket-hero-title">🇾🇪 Parabéns! Você vai ao MorumBIS!</h2>
+                                <h2 class="ticket-hero-title">
+                                    <svg width="24" height="16" viewBox="0 0 24 16" style="vertical-align:middle; border-radius:2px; box-shadow:0 1px 4px rgba(0,0,0,0.6); margin-right:5px;" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="5.33" y="0" fill="#E41B17"/><rect width="24" height="5.33" y="5.33" fill="#FFFFFF"/><rect width="24" height="5.33" y="10.66" fill="#000000"/></svg>
+                                    <span>Parabéns! Você vai ao MorumBIS!</span>
+                                </h2>
                                 <p class="ticket-hero-sub">Sua compra foi aprovada com sucesso e seu ingresso já está vinculado ao seu reconhecimento facial.</p>
 
                                 <div class="ticket-sector-highlight">
@@ -1454,7 +1592,7 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                                     </div>
                                     <div class="guide-item">
                                         <span>📸</span>
-                                        <span><strong>Catraca Biométrica:</strong> Apresente seu documento original com foto (RG/CNH) e olhe para a câmera da catraca.</span>
+                                        <span><strong>Catraca Biométrica:</strong> Leve seu documento original com foto (RG/CNH) e efetive o acesso ao setor através da facial.</span>
                                     </div>
                                     <div class="guide-item">
                                         <span>🚇</span>
@@ -1494,7 +1632,17 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                     `;
                 }
 
-                // TIMELINE COM SUPER DESTAQUE NO PASSO 3
+                // TEXTOS ADAPTATIVOS DO PASSO 2 E PASSO 3 CONFORME STATUS
+                const step2Title = isConcluido 
+                    ? '2. Atendimento Concluído • Cota Localizada' 
+                    : '2. Atendimento Ativo • Monitoramento Contínuo';
+
+                const step2Desc = isConcluido
+                    ? `Nossa equipe realizou varredura ininterrupta de cotas e localizou com sucesso seu ingresso nos setores prioritários (${setorConfirmado}).`
+                    : `Nossa equipe está realizando a busca ininterrupta dos ingressos nos setores prioritários (${setorSolicitado}). Fique atento, estamos acompanhando cada atualização do sistema para você!`;
+
+                const step2Time = isConcluido ? 'Etapa Concluída' : 'Em Andamento';
+
                 const step3Content = isConcluido ? `
                     <div class="step-3-highlight-card">
                         <div class="step-3-badge">🏆 ETAPA FINAL CONCLUÍDA COM SUCESSO!</div>
@@ -1539,9 +1687,9 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                                 <div class="step-item ${isConcluido ? 'completed' : 'active'}">
                                     <div class="step-icon">${isConcluido ? '✓' : '2'}</div>
                                     <div class="step-content">
-                                        <div class="step-heading">2. Atendimento Ativo • Monitoramento Contínuo</div>
-                                        <div class="step-desc">Nossa equipe realizou varredura ininterrupta de cotas nos setores prioritários (${setorSolicitado}).</div>
-                                        <div class="step-time">${isConcluido ? 'Etapa Concluída' : 'Em Andamento'}</div>
+                                        <div class="step-heading">${step2Title}</div>
+                                        <div class="step-desc">${step2Desc}</div>
+                                        <div class="step-time">${step2Time}</div>
                                     </div>
                                 </div>
 
@@ -1557,19 +1705,22 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                             </div>
                         </div>
 
-                        <!-- CARD VIRAL / RECOMENDAÇÃO: CONVIDAR UM TRICOLOR -->
+                        <!-- CARD VIRAL: CONVIDAR UM TRICOLOR (DIRECIONA PARA 11 98242-9623) -->
                         <div class="glass-card invite-card">
                             <div class="invite-header-badge">
                                 <span>🔥</span>
                                 <span>ALTA DEMANDA • JOGO HISTÓRICO NO MORUMBIS</span>
                             </div>
-                            <h3 class="invite-title">🇾🇪 Convidar um Amigo Tricolor</h3>
+                            <h3 class="invite-title">
+                                <svg width="24" height="16" viewBox="0 0 24 16" style="vertical-align:middle; border-radius:2px; box-shadow:0 1px 4px rgba(0,0,0,0.6); margin-right:5px;" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="5.33" y="0" fill="#E41B17"/><rect width="24" height="5.33" y="5.33" fill="#FFFFFF"/><rect width="24" height="5.33" y="10.66" fill="#000000"/></svg>
+                                <span>Convidar um Amigo Tricolor</span>
+                            </h3>
                             <p class="invite-desc">
-                                Conhece algum são-paulino que <strong>ainda está sem ingresso</strong> para essa noite histórica de Copa contra o Boca? Com a altíssima procura, os setores estão esgotando! Indique nossa assessoria para que ele também garanta o lugar dele no MorumBIS antes que esgote tudo.
+                                Conhece algum são-paulino que <strong>ainda está sem ingresso</strong> para essa noite histórica de Copa contra o Boca? Com a altíssima procura, os setores estão esgotando! Compartilhe o contato direto da nossa assessoria para que ele também garanta o lugar dele no MorumBIS antes que esgote tudo.
                             </p>
-                            <a href="https://api.whatsapp.com/send?text=%F0%9F%87%BE%F0%9F%87%AA+*SALVE+TRICOLOR%21*+Voc%C3%AA+j%C3%A1+garantiu+seu+ingresso+pro+jog%C3%A3o+SPFC+x+Boca+no+MorumBIS%3F+Se+ainda+n%C3%A3o+conseguiu%2C+fala+com+o+pessoal+da+Tricolor+Tickets+que+eles+garantiram+o+meu+com+reconhecimento+facial+r%C3%A1pido+e+seguro%21+Acompanha+o+status+por+aqui%3A+https%3A%2F%2Ftricolorticket.onrender.com" target="_blank" class="btn-invite-wpp">
+                            <a href="https://wa.me/5511982429623?text=%F0%9F%87%BE%F0%9F%87%AA+Ol%C3%A1%21+Meu+amigo+me+indicou+sua+assessoria+para+conseguir+ingressos+pro+jogo+S%C3%A3o+Paulo+x+Boca+no+MorumBIS%21+Gostaria+de+saber+os+setores+e+valores+dispon%C3%ADveis+para+garantir+o+meu+lugar." target="_blank" class="btn-invite-wpp">
                                 <span>📲</span>
-                                <span>Indicar para um Amigo no WhatsApp</span>
+                                <span>Falar no WhatsApp com a Assessoria (11 98242-9623)</span>
                                 <span>➔</span>
                             </a>
                             <div class="invite-footer-note">
