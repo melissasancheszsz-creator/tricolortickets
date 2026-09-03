@@ -1481,9 +1481,13 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
         }
 
         // ======================================================================
-        // RENDERIZAÇÃO DO STATUS DO PEDIDO DO TORCEDOR (COM CPF NA ROTA)
+        // RENDERIZAÇÃO DO STATUS DO PEDIDO DO TORCEDOR COM AUTO-POLLING EM TEMPO REAL
         // ======================================================================
-        async function carregarRastreio() {
+        let ultimoHashRenderizado = null;
+        let timerPollingStatus = null;
+        let primeiraCarga = true;
+
+        async function carregarRastreio(silencioso = false) {
             const cpf = extrairCPFRota();
             const container = document.getElementById('dynamicContainer');
 
@@ -1492,40 +1496,63 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                 return;
             }
 
-            container.innerHTML = `
-                <div class="glass-card" style="padding:40px 20px; text-align:center;">
-                    <div class="pulse-dot-red" style="margin:0 auto 12px; width:12px; height:12px;"></div>
-                    <div style="font-size:14px; font-weight:800; color:#fff;">Consultando Servidor Oficial...</div>
-                    <div style="font-size:11px; color:var(--spfc-muted); margin-top:4px;">Carregando status biométrico do CPF ${mascararCPF(cpf)}</div>
-                </div>
-            `;
+            if (primeiraCarga && !silencioso) {
+                container.innerHTML = `
+                    <div class="glass-card" style="padding:40px 20px; text-align:center;">
+                        <div class="pulse-dot-red" style="margin:0 auto 12px; width:12px; height:12px;"></div>
+                        <div style="font-size:14px; font-weight:800; color:#fff;">Consultando Servidor Oficial...</div>
+                        <div style="font-size:11px; color:var(--spfc-muted); margin-top:4px;">Carregando status biométrico do CPF ${mascararCPF(cpf)}</div>
+                    </div>
+                `;
+            }
 
             try {
                 const res = await fetch(`/api/rastreio?cpf=${cpf}`, {
                     headers: { 'Bypass-Tunnel-Reminder': 'true' }
                 });
                 const data = await res.json();
+                primeiraCarga = false;
 
                 if (!data.encontrado) {
-                    container.innerHTML = `
-                        <div class="glass-card search-card">
-                            <div style="font-size:36px; margin-bottom:10px;">🔍</div>
-                            <h3 style="font-size:17px; font-weight:800; color:#fff;">Solicitação Não Localizada</h3>
-                            <p style="font-size:12px; color:var(--spfc-muted); margin:8px 0 18px; line-height:1.4;">
-                                Não localizamos nenhuma solicitação ativa para o CPF <strong>${mascararCPF(cpf)}</strong>.
-                            </p>
-                        </div>
-                    `;
+                    if (ultimoHashRenderizado !== 'NAO_ENCONTRADO') {
+                        ultimoHashRenderizado = 'NAO_ENCONTRADO';
+                        container.innerHTML = `
+                            <div class="glass-card search-card">
+                                <div style="font-size:36px; margin-bottom:10px;">🔍</div>
+                                <h3 style="font-size:17px; font-weight:800; color:#fff;">Solicitação Não Localizada</h3>
+                                <p style="font-size:12px; color:var(--spfc-muted); margin:8px 0 18px; line-height:1.4;">
+                                    Não localizamos nenhuma solicitação ativa para o CPF <strong>${mascararCPF(cpf)}</strong>.
+                                </p>
+                            </div>
+                        `;
+                    }
+                    agendarProximaVerificacao(cpf, 4000);
                     return;
                 }
 
                 const ped = data.pedido;
-                const isConcluido = ped.status === 'CONCLUIDO';
+                const isConcluido = (ped.status === 'CONCLUIDO');
                 const cpfMask = mascararCPF(ped.cpf);
                 const agoraHora = new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
                 const setorSolicitado = ped.setores_solicitados || ped.setor || 'Arquibancada';
                 const setorConfirmado = ped.setor_comprado || ped.setor || 'Arquibancada';
                 const portaoInfo = obterPortaoSetorOficial(setorConfirmado);
+
+                // Hash único do estado do pedido para evitar re-renderização desnecessária do DOM
+                const hashAtual = `${ped.status}_${setorConfirmado}_${ped.id_pedido}_${setorSolicitado}`;
+
+                if (ultimoHashRenderizado === hashAtual) {
+                    // Estado idêntico: apenas atualiza o relógio da tag "ATUALIZADO ÀS HH:MM:SS" suavemente
+                    const liveTagHora = document.getElementById('liveHoraTexto');
+                    if (liveTagHora) {
+                        liveTagHora.innerText = `ATUALIZADO ÀS ${agoraHora}`;
+                    }
+                    agendarProximaVerificacao(cpf, isConcluido ? 25000 : 3500);
+                    return;
+                }
+
+                // O estado mudou! Atualiza o hash e renderiza o layout atualizado
+                ultimoHashRenderizado = hashAtual;
 
                 let heroHtml = '';
 
@@ -1542,7 +1569,7 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                             <div class="ticket-body">
                                 <h2 class="ticket-hero-title">
                                     <svg width="24" height="16" viewBox="0 0 24 16" style="vertical-align:middle; border-radius:2px; box-shadow:0 1px 4px rgba(0,0,0,0.6); margin-right:5px;" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="5.33" y="0" fill="#E41B17"/><rect width="24" height="5.33" y="5.33" fill="#FFFFFF"/><rect width="24" height="5.33" y="10.66" fill="#000000"/></svg>
-                                    <span>Parabéns! Você vai ao MorumBIS!</span>
+                                    <span>Parabéns! Você vai pro MorumBIS!</span>
                                 </h2>
                                 <p class="ticket-hero-sub">Sua compra foi aprovada com sucesso e seu ingresso já está vinculado ao seu reconhecimento facial.</p>
 
@@ -1592,7 +1619,7 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                                     </div>
                                     <div class="guide-item">
                                         <span>📸</span>
-                                        <span><strong>Catraca Biométrica:</strong> Leve seu documento original com foto (RG/CNH) e efetive o acesso ao setor através da facial.</span>
+                                        <span><strong>Catraca Biométrica:</strong> Apresente seu documento original com foto (RG ou CNH) e libere seu acesso pelo reconhecimento facial.</span>
                                     </div>
                                     <div class="guide-item">
                                         <span>🚇</span>
@@ -1670,7 +1697,7 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                                 </span>
                                 <div class="live-tag">
                                     <span class="pulse-dot-red" style="width:6px; height:6px;"></span>
-                                    <span>ATUALIZADO ÀS ${agoraHora}</span>
+                                    <span id="liveHoraTexto">ATUALIZADO ÀS ${agoraHora}</span>
                                 </div>
                             </div>
 
@@ -1718,9 +1745,9 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                             <p class="invite-desc">
                                 Conhece algum são-paulino que <strong>ainda está sem ingresso</strong> para essa noite histórica de Copa contra o Boca? Com a altíssima procura, os setores estão esgotando! Compartilhe o contato direto da nossa assessoria para que ele também garanta o lugar dele no MorumBIS antes que esgote tudo.
                             </p>
-                            <a href="https://wa.me/5511982429623?text=%F0%9F%87%BE%F0%9F%87%AA+Ol%C3%A1%21+Meu+amigo+me+indicou+sua+assessoria+para+conseguir+ingressos+pro+jogo+S%C3%A3o+Paulo+x+Boca+no+MorumBIS%21+Gostaria+de+saber+os+setores+e+valores+dispon%C3%ADveis+para+garantir+o+meu+lugar." target="_blank" class="btn-invite-wpp">
-                                <span>📲</span>
-                                <span>Falar no WhatsApp com a Assessoria (11 98242-9623)</span>
+                            <a href="https://wa.me/5511982429623?text=%F0%9F%87%BE%F0%9F%87%AA+Ol%C3%A1%21+Meu+amigo+me+indicou+a+Tricolor+Tickets+para+conseguir+ingressos+pro+jogo+S%C3%A3o+Paulo+x+Boca+no+MorumBIS%21+Gostaria+de+saber+os+setores+e+valores+dispon%C3%ADveis+para+garantir+o+meu+lugar." target="_blank" class="btn-invite-wpp">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFFFFF" style="vertical-align:middle; flex-shrink:0;" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92zM12.04 20.14c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31c-.82-1.31-1.26-2.83-1.26-4.38 0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.54-3.7 8.24-8.23 8.24zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.35-.77-1.85c-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.08 0 1.23.89 2.42 1.02 2.59.12.17 1.76 2.69 4.27 3.77.6.26 1.06.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.3z"/></svg>
+                                <span>WhatsApp: Falar com a Tricolor Tickets</span>
                                 <span>➔</span>
                             </a>
                             <div class="invite-footer-note">
@@ -1730,18 +1757,31 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                     </div>
                 `;
 
+                agendarProximaVerificacao(cpf, isConcluido ? 25000 : 3500);
+
             } catch (err) {
-                console.error(err);
-                container.innerHTML = `
-                    <div class="glass-card search-card">
-                        <div style="font-size:32px; margin-bottom:8px;">⚠️</div>
-                        <h3 style="font-size:16px; font-weight:800; color:#fff;">Erro de Conexão</h3>
-                        <p style="font-size:12px; color:var(--spfc-muted); margin:8px 0 16px;">
-                            Não foi possível conectar com o servidor no momento. Por favor, tente novamente em alguns segundos.
-                        </p>
-                    </div>
-                `;
+                console.error("Erro no polling de rastreio:", err);
+                if (primeiraCarga) {
+                    container.innerHTML = `
+                        <div class="glass-card search-card">
+                            <div style="font-size:32px; margin-bottom:8px;">⚠️</div>
+                            <h3 style="font-size:16px; font-weight:800; color:#fff;">Erro de Conexão</h3>
+                            <p style="font-size:12px; color:var(--spfc-muted); margin:8px 0 16px;">
+                                Tentando restabelecer conexão com o servidor...
+                            </p>
+                        </div>
+                    `;
+                }
+                agendarProximaVerificacao(cpf, 5000);
             }
+        }
+
+        function agendarProximaVerificacao(cpf, intervaloMs) {
+            if (!cpf) return;
+            if (timerPollingStatus) clearTimeout(timerPollingStatus);
+            timerPollingStatus = setTimeout(() => {
+                carregarRastreio(true);
+            }, intervaloMs);
         }
 
         window.addEventListener('DOMContentLoaded', () => {
