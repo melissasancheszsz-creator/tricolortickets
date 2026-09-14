@@ -1128,7 +1128,7 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                 </div>
                 <div class="meta-item">
                     <span class="meta-label">Data</span>
-                    <span class="meta-val" id="matchDate">18/09/2026</span>
+                    <span class="meta-val" id="matchDate">15/09/2026</span>
                 </div>
                 <div class="meta-item">
                     <span class="meta-label">Horário</span>
@@ -1281,7 +1281,7 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
         // CONTAGEM REGRESSIVA PARA O JOGO
         // ======================================================================
         function iniciarContagemRegressiva() {
-            const matchTime = new Date('2026-09-18T21:30:00-03:00').getTime();
+            const matchTime = new Date('2026-09-15T21:30:00-03:00').getTime();
 
             function atualizar() {
                 const agora = new Date().getTime();
