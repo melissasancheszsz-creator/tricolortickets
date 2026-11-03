@@ -952,11 +952,11 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
             </div>
         </div>
 
-        <!-- MATCH CENTER (SÃO PAULO X SANTOS FC COM ESCUDOS OFICIAIS VETORIAIS) -->
+        <!-- MATCH CENTER (SÃO PAULO X SC CORINTHIANS COM ESCUDOS OFICIAIS VETORIAIS) -->
         <div class="glass-card match-card">
             <div class="comp-tag">
                 <span>🏆</span>
-                <span id="matchComp">BRASILEIRÃO BETANO 2026 • CLÁSSICO SAN-SÃO</span>
+                <span id="matchComp">BRASILEIRÃO BETANO 2026 • CLÁSSICO MAJESTOSO</span>
             </div>
             <div class="teams-row">
                 <div class="team-box">
@@ -1012,119 +1012,80 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                 <div class="team-box">
                     <div class="team-crest-wrap">
                         
-<!-- Santos FC Official Vector SVG -->
-<svg viewBox="-5 -5 511 501"
-   xmlns="http://www.w3.org/2000/svg"
-   version="1.1"
-   width="501"
-   height="491">
-<path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" stroke="#FFFFFF" stroke-width="6" d="M398.0888672,0c-2.7421875,1.4848633-5.4814453,2.9697266-8.2236328,4.4536133
-	c-38.6015625,20.1010742-85.1962891,30.1499023-139.784668,30.2636719
-	C195.3774414,34.6035156,148.78125,24.5546875,110.0668945,4.4536133C107.3261719,2.9697266,104.5854492,1.4848633,101.9584961,0
-	L31.2661133,76.1738281C72.8364258,106.7807617,71.3530273,155.887207,26.8125,223.4956055
-	C-0.5966797,264.8369141-6.9907227,308.0058594,7.6269531,353.0029297
-	c18.2714844,56.4160156,62.1254883,86.7939453,131.6757813,91.2480469
-	c43.2832031,2.7392578,80.1708984,17.9306641,110.777832,45.6806641c30.4916992-27.75,67.3793945-42.9414063,110.6625977-45.6806641
-	c69.5488281-4.4541016,113.4042969-34.8320313,131.6767578-91.2480469
-	c14.5029297-44.9970703,8.2207031-88.1660156-19.0732422-129.5073242
-	c-44.6523438-67.6083984-46.1386719-116.7148438-4.5673828-147.3217773L398.0888672,0L398.0888672,0z"/>
-<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M106.0703125,12.1064453
-	c-0.7998047-0.3432617-1.5986328-0.800293-2.3989258-1.2573242L44.0576172,75.2597656
-	c38.6000977,33.2338867,35.2885742,84.2822266-10.0493164,152.918457c-2.6279297,3.996582-5.1396484,8.1088867-7.3095703,12.1049805
-	l326.965332-211.5043945c-30.6083984,9.7075195-65.2128906,14.5039063-103.5834961,14.6181641
-	C193.8920898,43.2827148,145.9262695,32.890625,106.0703125,12.1064453L106.0703125,12.1064453z"/>
-<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M227.0107422,240.3989258l-46.3666992,29.9194336v171.8759766
-	c16.4462891,4.4541016,31.862793,11.0771484,46.2529297,19.6425781L227.0107422,240.3989258L227.0107422,240.3989258z"/>
-<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M319.6298828,180.4418945l-46.3671875,29.9208984v251.4741211
-	c14.3916016-8.6787109,29.8085938-15.3027344,46.3671875-19.7558594V180.4418945L319.6298828,180.4418945z"/>
-<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M134.2783203,300.3544922l-46.3666992,29.921875v95.1318359
-	c13.7036133,5.0234375,29.1220703,8.2207031,46.3666992,9.8212891V300.3544922L134.2783203,300.3544922z"/>
-<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M41.5444336,360.3125l-16.9018555,10.8496094
-	c4.6831055,8.9072266,10.2783203,16.9003906,16.9018555,24.0957031V360.3125L41.5444336,360.3125z"/>
-<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M412.3632813,120.4848633l-46.4804688,29.9208984v284.8237305
-	c17.2451172-1.6005859,32.6611328-4.9121094,46.3671875-9.9355469L412.3632813,120.4848633L412.3632813,120.4848633z"/>
-<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M466.0371094,228.1782227
-	c-2.625-3.8823242-5.1367188-7.8803711-7.4208984-11.6479492v178.6142578
-	c11.1914063-12.2216797,19.7568359-27.1806641,25.5800781-44.7695313
-	C497.9013672,307.8916016,491.8476563,267.234375,466.0371094,228.1782227L466.0371094,228.1782227z"/>
-<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M373.5341797,43.8540039
-	c-1.2558594-3.0825195-3.9980469-3.769043-8.1103516-1.828125l-60.4111328,39.9726563
-	c-3.65625,3.8823242-5.484375,7.7651367-5.7119141,11.7617188v67.4946289
-	c1.2558594,8.4516602,5.2539063,10.7353516,12.1054688,7.0805664l52.9902344-33.5756836
-	c4.7978516-4.1103516,7.8818359-9.7075195,9.1376953-16.6738281V86.9091797l-26.8388672,16.3305664v19.7578125
-	l-14.8466797,9.9355469c-1.7119141,0.9140625-2.9677734,0.7998047-3.6533203-0.3432617
-	c-0.5722656-0.9140625-0.8007813-2.6269531-0.9140625-5.3662109l-0.5693359-34.4897461
-	c0.2275391-1.9418945,0.9111328-3.5410156,2.0527344-4.6831055l15.7607422-11.6494141
-	c3.4257813-2.7407227,5.2539063-2.625,5.4824219,0.2294922v3.6547852l23.5263672-15.6459961V43.8540039L373.5341797,43.8540039z"/>
-<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" points="237.7460938,146.9785156 254.4199219,136.1308594 
-	254.4199219,113.5180664 175.6196289,164.6816406 175.6196289,181.6977539 186.5825195,175.0742188 186.5825195,231.3759766 
-	175.9624023,238.5708008 176.1904297,254.5595703 228.2680664,221.6689453 228.2680664,205.3378906 214.4487305,214.2451172 
-	214.4487305,193.0039063 228.0390625,184.2104492 228.0390625,195.6293945 242.0859375,186.2651367 242.0859375,150.9765625 
-	229.1806641,159.8852539 229.1806641,166.2792969 214.105957,174.9599609 214.105957,157.0302734 232.8354492,144.5825195 
-	237.7460938,146.9785156 "/>
-<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" points="159.859375,264.9501953 159.859375,243.3671875 
-	137.3623047,257.5273438 137.3623047,279.7978516 159.859375,264.9501953 "/>
-<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" points="260.5849609,178.1582031 260.5849609,200.3134766 
-	283.0839844,185.5800781 283.0839844,163.9956055 260.5849609,178.1582031 "/>
-<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M120.1162109,205.4521484
-	c-1.7128906-0.9140625-4.2246094-1.0283203-7.765625-0.1142578l-55.8447266,34.6040039
-	c-5.824707,3.7670898-8.4516602,7.6499023-7.7670898,11.7612305l0.1152344,29.3505859
-	c0.4570313,4.453125,2.0546875,6.8535156,4.796875,7.0820313c2.8549805,0.3417969,6.965332-1.4863281,12.4482422-5.3681641
-	l23.2973633-14.8466797c4.4536133-1.7119141,7.1943359-1.5976563,8.1083984,0.34375v19.0703125l-18.7299805,12.5634766
-	c-3.0834961,1.7119141-4.3393555,0.4560547-3.8823242-3.65625v-10.6210938l-26.1538086,16.2197266v19.8701172
-	c-0.1137695,8.3349609,3.4272461,10.8496094,10.6230469,7.4238281l56.5297852-36.4316406
-	c4.9106445-2.6259766,7.1943359-8.2207031,7.0805664-16.5585938l-0.3432617-27.2939453
-	c-3.9980469-5.8251953-10.1640625-6.9682617-18.3867188-3.1992188l-24.7822266,15.1904297
-	c-2.3979492,0.9111328-3.7685547-0.1171875-4.2246094-2.7421875v-8.5654297c-0.2290039-1.2558594,0-2.5117188,0.7988281-3.6542969
-	c0.7988281-1.1416016,2.1699219-2.3984375,4.4536133-3.8837891l12.1064453-7.7651367
-	c2.8549805-1.5991211,4.6816406-1.2558594,5.2524414,1.2558594v6.2817383l25.1254883-15.5307617v-16.2167969
-	C122.2871094,207.7373047,121.3730469,206.2519531,120.1162109,205.4521484L120.1162109,205.4521484z"/>
-<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" points="411.2216797,104.2680664 411.2216797,82.5693359 
-	388.7226563,96.7304688 388.7226563,119.0009766 411.2216797,104.2680664 "/>
-<path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" d="M190.2373047,93.1894531c0-14.9599609-5.3676758-27.7509766-15.8735352-38.2573242
-	c-10.621582-10.6210938-23.4116211-15.9887695-38.2587891-15.8735352
-	c-14.9594727-0.1152344-27.6367188,5.2524414-38.2583008,15.8735352
-	C87.2265625,65.4384766,81.9726563,78.2294922,81.9726563,93.1894531c0,14.847168,5.2539063,27.637207,15.8740234,38.2583008
-	c0.6850586,0.5712891,1.3710938,1.2558594,2.0561523,1.828125c10.1640625,9.3642578,22.1552734,14.0458984,36.2021484,14.0458984
-	c14.847168,0,27.637207-5.3662109,38.2587891-15.8740234C184.8696289,120.8266602,190.2373047,108.0366211,190.2373047,93.1894531
-	L190.2373047,93.1894531z M133.59375,44.3110352c0.9125977-0.1142578,1.7128906-0.1142578,2.6254883-0.1142578
-	c5.7104492,0,10.8491211,0.9130859,15.875,2.5131836c0.1137695,0.1137695,0.1137695,0.2275391,0.1137695,0.3417969
-	c13.1333008,23.4111328,14.2749023,43.512207,3.769043,60.0708008c-0.1142578-0.1137695-0.3432617-0.1137695-0.5712891-0.2290039
-	C158.0327148,84.0527344,150.8369141,63.1547852,133.59375,44.3110352L133.59375,44.3110352z M152.4360352,110.206543
-	c0.5708008,0,1.2558594,0,1.9418945,0.1137695c0.7988281,0.1142578,1.4848633,0.3432617,2.0561523,0.6850586
-	c0.2275391,0.2290039,0.4570313,0.4570313,0.6845703,0.7998047c0,0.1142578,0,0.1142578,0,0.1142578
-	c0,0.2290039,0.1142578,0.4570313,0,0.7998047c-0.1137695,0.5712891-0.4570313,1.2558594-1.1416016,1.940918
-	c-0.3432617,0.4570313-0.6865234,0.9140625-1.1420898,1.2568359c-1.027832,0.9130859-2.3989258,1.7119141-3.9980469,2.2841797
-	c-1.9404297,0.6845703-3.7685547,1.027832-5.4814453,1.027832c-0.2280273-0.1152344-0.4570313-0.1152344-0.6845703-0.1152344
-	c-1.2573242-0.2280273-2.0561523-0.6850586-2.5131836-1.4848633c-0.3417969-0.7988281-0.2280273-1.5991211,0.5722656-2.6259766
-	c0,0,0.112793-0.1137695,0.112793-0.2275391c0,0,0,0,0.1152344,0c1.1416016-1.4848633,2.9682617-2.6269531,5.2519531-3.5410156
-	C149.5810547,110.6635742,151.0649414,110.3203125,152.4360352,110.206543L152.4360352,110.206543z M149.8105469,107.1225586
-	c-1.0292969,0.2290039-1.828125,0.4570313-2.855957,0.9140625c-2.2836914,0.7988281-4.1118164,1.940918-5.5957031,3.3115234
-	c-25.6962891-4.5673828-38.3725586-22.6123047-38.1445313-54.2475586
-	c6.9663086-6.394043,14.9609375-10.5058594,23.8681641-12.1035156
-	C145.3554688,63.6103516,152.7792969,84.2822266,149.8105469,107.1225586L149.8105469,107.1225586z M184.1850586,83.2543945
-	c-0.2280273,0.6845703-0.4570313,1.4848633-0.6865234,2.2836914c-4.7954102,14.1621094-12.5605469,22.3847656-23.2973633,24.668457
-	c11.1938477-16.7880859,10.9648438-36.8886719-0.5693359-60.0708008c3.996582,2.1699219,7.6513672,5.0244141,11.0771484,8.4501953
-	C177.9033203,65.6660156,182.3569336,73.8901367,184.1850586,83.2543945L184.1850586,83.2543945z M171.0517578,127.3359375
-	c-0.1137695,0.1152344-0.2275391,0.2294922-0.3427734,0.3432617c-5.9389648,5.9384766-12.6762695,10.050293-20.2138672,12.3339844
-	c3.4257813-5.3676758,4.5678711-11.7631836,3.6538086-19.5283203c0.3427734-0.1137695,0.6860352-0.3432617,1.027832-0.5708008
-	C160.4306641,124.1396484,165.7983398,126.6523438,171.0517578,127.3359375L171.0517578,127.3359375z M159.0595703,116.3730469
-	c0.2290039-0.3432617,0.4570313-0.5712891,0.5722656-0.9130859c11.1923828-1.4848633,19.6425781-8.2236328,25.4672852-20.2148438
-	c-0.3432617,10.1645508-3.6547852,19.1870117-9.59375,27.0664063
-	C170.0239258,122.5405273,164.5424805,120.5986328,159.0595703,116.3730469L159.0595703,116.3730469z M139.7597656,121.1694336
-	c0.3432617,0.1157227,0.5712891,0.3432617,1.0283203,0.5712891c-8.5654297,7.1958008-21.4707031,9.3642578-38.6015625,6.2817383
-	c-0.2280273-0.1152344-0.3417969-0.2294922-0.4560547-0.3432617c-4.4545898-4.4536133-7.7666016-9.1362305-10.1640625-14.3886719
-	C107.4399414,122.7685547,123.4291992,125.3955078,139.7597656,121.1694336L139.7597656,121.1694336z M147.2973633,122.6547852
-	v-0.1142578c0.5712891,0,1.2558594-0.1137695,1.8266602-0.2290039c0.7988281,8.1083984-1.4848633,14.6181641-6.8525391,19.4145508
-	c-1.9404297,0.1142578-3.996582,0.2294922-6.0522461,0.3432617c-9.59375-0.1137695-18.2714844-2.5131836-25.9228516-7.4238281
-	C126.96875,135.7875977,139.3027344,131.7910156,147.2973633,122.6547852L147.2973633,122.6547852z M88.8242188,105.2958984
-	c-1.0268555-3.8828125-1.4838867-7.8808594-1.4838867-12.2202148c0-11.5341797,3.5395508-21.6987305,10.7353516-30.4916992
-	c1.1420898,30.6054688,14.6181641,48.4213867,40.4287109,53.5610352
-	C121.6025391,120.3710938,105.0424805,116.8300781,88.8242188,105.2958984L88.8242188,105.2958984z"/>
+<!-- SC Corinthians Official Vector SVG -->
+<svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="corinthiansShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <g filter="url(#corinthiansShadow)">
+    <!-- Remo 1 (Diagonal Direita) -->
+    <path d="M25 135 L135 25 L142 32 L32 142 Z" fill="#B71C1C" stroke="#7F0000" stroke-width="1.5"/>
+    <path d="M130 20 C138 12 148 22 140 30 L132 22 Z" fill="#D32F2F" stroke="#7F0000" stroke-width="1.5"/>
+    <!-- Remo 2 (Diagonal Esquerda) -->
+    <path d="M135 135 L25 25 L18 32 L128 142 Z" fill="#B71C1C" stroke="#7F0000" stroke-width="1.5"/>
+    <path d="M20 20 C12 12 22 22 30 30 L22 32 Z" fill="#D32F2F" stroke="#7F0000" stroke-width="1.5"/>
+    <!-- Âncora (Haste Vertical e Anel) -->
+    <circle cx="80" cy="22" r="8" fill="none" stroke="#C62828" stroke-width="3.5"/>
+    <rect x="77" y="28" width="6" height="108" rx="2" fill="#B71C1C" stroke="#7F0000" stroke-width="1"/>
+    <rect x="64" y="40" width="32" height="5" rx="2" fill="#B71C1C" stroke="#7F0000" stroke-width="1"/>
+    <!-- Âncora (Ganchos Curvos da Base) -->
+    <path d="M46 112 C52 134 108 134 114 112 C114 112 108 126 80 126 C52 126 46 112 46 112 Z" fill="#C62828" stroke="#7F0000" stroke-width="1.5"/>
+    <polygon points="44,114 49,106 53,115" fill="#C62828" stroke="#7F0000" stroke-width="1"/>
+    <polygon points="116,114 111,106 107,115" fill="#C62828" stroke="#7F0000" stroke-width="1"/>
+
+    <!-- Boia Náutica -->
+    <circle cx="80" cy="82" r="50" fill="#FFFFFF" stroke="#111111" stroke-width="2.5"/>
+    <path d="M80 32 L80 38 M80 126 L80 132 M30 82 L36 82 M124 82 L130 82" stroke="#D32F2F" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="80" cy="82" r="46" fill="none" stroke="#888888" stroke-width="1" stroke-dasharray="2,2"/>
+
+    <!-- Círculo Preto Interno -->
+    <circle cx="80" cy="82" r="44" fill="#111111"/>
+
+    <!-- Texto Curvo -->
+    <path id="textPathTop" d="M44 82 A36 36 0 0 1 116 82" fill="none"/>
+    <path id="textPathBottom" d="M116 82 A36 36 0 0 1 44 82" fill="none"/>
+    <text fill="#FFFFFF" font-size="6.8" font-family="'Montserrat', sans-serif" font-weight="900" letter-spacing="0.8">
+      <textPath href="#textPathTop" startOffset="50%" text-anchor="middle">S.C. CORINTHIANS</textPath>
+    </text>
+    <text fill="#FFFFFF" font-size="6.8" font-family="'Montserrat', sans-serif" font-weight="900" letter-spacing="0.8">
+      <textPath href="#textPathBottom" startOffset="50%" text-anchor="middle">PAULISTA • 1910</textPath>
+    </text>
+
+    <!-- Centro: Círculo Branco com Borda -->
+    <circle cx="80" cy="82" r="27" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+
+    <!-- Bandeira Paulista no Centro -->
+    <g transform="translate(57, 65)">
+      <clipPath id="flagClip">
+        <circle cx="23" cy="17" r="23"/>
+      </clipPath>
+      <g clip-path="url(#flagClip)">
+        <rect x="0" y="0" width="46" height="2.6" fill="#000000"/>
+        <rect x="0" y="2.6" width="46" height="2.6" fill="#FFFFFF"/>
+        <rect x="0" y="5.2" width="46" height="2.6" fill="#000000"/>
+        <rect x="0" y="7.8" width="46" height="2.6" fill="#FFFFFF"/>
+        <rect x="0" y="10.4" width="46" height="2.6" fill="#000000"/>
+        <rect x="0" y="13.0" width="46" height="2.6" fill="#FFFFFF"/>
+        <rect x="0" y="15.6" width="46" height="2.6" fill="#000000"/>
+        <rect x="0" y="18.2" width="46" height="2.6" fill="#FFFFFF"/>
+        <rect x="0" y="20.8" width="46" height="2.6" fill="#000000"/>
+        <rect x="0" y="23.4" width="46" height="2.6" fill="#FFFFFF"/>
+        <rect x="0" y="26.0" width="46" height="2.6" fill="#000000"/>
+        <rect x="0" y="28.6" width="46" height="2.6" fill="#FFFFFF"/>
+        <rect x="0" y="31.2" width="46" height="3.8" fill="#000000"/>
+        <rect x="0" y="0" width="18" height="15" fill="#D32F2F"/>
+        <circle cx="9" cy="7.5" r="5" fill="#FFFFFF"/>
+        <circle cx="9" cy="7.5" r="4" fill="#1565C0"/>
+        <circle cx="9" cy="7.5" r="1.5" fill="#FFFFFF"/>
+      </g>
+    </g>
+  </g>
 </svg>
 
                     </div>
-                    <span class="team-name" id="opponentName">SANTOS FC</span>
+                    <span class="team-name" id="opponentName">SC CORINTHIANS</span>
                     <span class="team-side">VISITANTE</span>
                 </div>
             </div>
@@ -1132,15 +1093,15 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
             <div class="meta-strip">
                 <div class="meta-item">
                     <span class="meta-label">Estádio</span>
-                    <span class="meta-val">MorumBIS</span>
+                    <span class="meta-val">Vila Belmiro (Santos/SP)</span>
                 </div>
                 <div class="meta-item">
                     <span class="meta-label">Data</span>
-                    <span class="meta-val" id="matchDate">02/10/2026</span>
+                    <span class="meta-val" id="matchDate">04/11/2026</span>
                 </div>
                 <div class="meta-item">
                     <span class="meta-label">Horário</span>
-                    <span class="meta-val">20:00 BRT</span>
+                    <span class="meta-val">21:30 BRT</span>
                 </div>
             </div>
 
@@ -1183,14 +1144,14 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                 <span>AVISO LEGAL & NOTA DE INDEPENDÊNCIA</span>
             </div>
             <p class="legal-text">
-                Esta página e este serviço de assessoria <strong>não possuem qualquer vínculo, filiação, homologação ou parceria oficial com a plataforma SPFC Ticket ou com o São Paulo Futebol Clube</strong>. Somos uma assessoria independente cujo propósito é auxiliar e apoiar o torcedor são-paulino em todas as etapas para garantir suas entradas com tranquilidade e apoiar o Tricolor no MorumBIS.
+                Esta página e este serviço de assessoria <strong>não possuem qualquer vínculo, filiação, homologação ou parceria oficial com a plataforma SPFC Ticket ou com o São Paulo Futebol Clube</strong>. Somos uma assessoria independente cujo propósito é auxiliar e apoiar o torcedor são-paulino em todas as etapas para garantir suas entradas com tranquilidade e apoiar o Tricolor na Vila Belmiro.
             </p>
         </div>
     </div>
 
     <script>
         // ======================================================================
-        // UTILITÁRIOS E MAPEAMENTO OFICIAL DOS PORTÕES DO MORUMBIS
+        // UTILITÁRIOS E MAPEAMENTO OFICIAL DOS PORTÕES DA VILA BELMIRO
         // ======================================================================
         function mascararCPF(cpfStr) {
             const clean = (cpfStr || '').replace(/\D/g, '');
@@ -1227,6 +1188,25 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
 
         // MAPEAMENTO OFICIAL CONFORME O MAPA DO MORUMBIS:
         function obterPortaoSetorOficial(setorNome) {
+            const s_low_chk = (setorNome || '').toLowerCase();
+            if (s_low_chk.includes('princesa') || s_low_chk.includes('isabel')) {
+                return { portao: 'Portões 7 e 8', setor: 'Arquibancada Princesa Isabel', acesso: 'Entrada oficial pela Rua Princesa Isabel (Vila Belmiro)' };
+            }
+            if (s_low_chk.includes('josé') || s_low_chk.includes('jose') || s_low_chk.includes('alencar')) {
+                return { portao: 'Portões 24 e 25', setor: 'Arquibancada José de Alencar', acesso: 'Entrada oficial pela Rua José de Alencar (Vila Belmiro)' };
+            }
+            if (s_low_chk.includes('térrea') || s_low_chk.includes('terrea')) {
+                return { portao: 'Portões 21 e 22', setor: 'Arquibancada Térrea', acesso: 'Entrada oficial pela Rua Tiradentes (Vila Belmiro)' };
+            }
+            if (s_low_chk.includes('coberta') || (s_low_chk.includes('dom pedro') && !s_low_chk.includes('especial'))) {
+                return { portao: 'Portões 1 e 2', setor: 'Cad. Coberta Dom Pedro', acesso: 'Entrada oficial pela Rua Dom Pedro I (Vila Belmiro)' };
+            }
+            if (s_low_chk.includes('especial') && (s_low_chk.includes('dom pedro') || s_low_chk.includes('pedro'))) {
+                return { portao: 'Portões 3 e 4', setor: 'Cad. Especial Dom Pedro', acesso: 'Entrada oficial pela Rua Dom Pedro I (Vila Belmiro)' };
+            }
+            if (s_low_chk.includes('vip')) {
+                return { portao: 'Portão 5 (Acesso VIP)', setor: 'Cadeira VIP', acesso: 'Entrada Nobre e Exclusiva pela Rua Dom Pedro I (Vila Belmiro)' };
+            }
             const s = (setorNome || '').toLowerCase();
             
             // 1. ARQUIBANCADAS
@@ -1289,7 +1269,7 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
         // CONTAGEM REGRESSIVA PARA O JOGO
         // ======================================================================
         function iniciarContagemRegressiva() {
-            const matchTime = new Date('2026-10-02T20:00:00-03:00').getTime();
+            const matchTime = new Date('2026-11-04T21:30:00-03:00').getTime();
 
             function atualizar() {
                 const agora = new Date().getTime();
@@ -1420,7 +1400,7 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                     <div class="pillar-card">
                         <div class="pillar-icon">🏟️</div>
                         <div class="pillar-title">Portão Oficial</div>
-                        <div class="pillar-desc">Mapeamento exato da sua entrada no MorumBIS conforme as diretrizes do clube.</div>
+                        <div class="pillar-desc">Mapeamento exato da sua entrada na Vila Belmiro conforme as diretrizes do clube.</div>
                     </div>
                 </div>
 
@@ -1433,11 +1413,11 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
 
                     <div class="faq-item" onclick="this.classList.toggle('open');">
                         <div class="faq-question">
-                            <span>Como funciona o acesso biométrico no MorumBIS?</span>
+                            <span>Como funciona o acesso biométrico na Vila Belmiro?</span>
                             <span class="faq-arrow">▼</span>
                         </div>
                         <div class="faq-answer">
-                            O acesso ao MorumBIS é 100% biométrico através do sistema BePass. Não é necessário imprimir ingresso. No dia do jogo, basta comparecer ao portão do seu setor com seu documento oficial com foto (RG ou CNH) e olhar para a câmera da catraca.
+                            O acesso à Vila Belmiro para o jogo do São Paulo é 100% biométrico através do sistema BePass. Não é necessário imprimir ingresso. No dia do jogo, basta comparecer ao portão do seu setor com seu documento oficial com foto (RG ou CNH) e olhar para a câmera da catraca.
                         </div>
                     </div>
 
@@ -1467,7 +1447,7 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                             <span class="faq-arrow">▼</span>
                         </div>
                         <div class="faq-answer">
-                            A estação São Paulo-Morumbi da Linha 4-Amarela do Metrô fica a apenas 15 minutos de caminhada do estádio, sendo a opção mais rápida e segura em dias de casa cheia.
+                            Para chegar à Vila Belmiro (Estádio Urbano Caldeira em Santos/SP), o acesso rodoviário é feito pelo Sistema Anchieta-Imigrantes. O estádio está situado próximo às principais vias da cidade e a cerca de 10 minutos do centro e da Rodoviária de Santos.
                         </div>
                     </div>
                 </div>
@@ -1577,7 +1557,7 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                             <div class="ticket-body">
                                 <h2 class="ticket-hero-title">
                                     <svg width="24" height="16" viewBox="0 0 24 16" style="vertical-align:middle; border-radius:2px; box-shadow:0 1px 4px rgba(0,0,0,0.6); margin-right:5px;" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="5.33" y="0" fill="#E41B17"/><rect width="24" height="5.33" y="5.33" fill="#FFFFFF"/><rect width="24" height="5.33" y="10.66" fill="#000000"/></svg>
-                                    <span>Parabéns! Você vai pro MorumBIS!</span>
+                                    <span>Parabéns! Você vai pra Vila Belmiro!</span>
                                 </h2>
                                 <p class="ticket-hero-sub">Sua compra foi aprovada com sucesso e seu ingresso já está vinculado ao seu reconhecimento facial.</p>
 
@@ -1631,7 +1611,7 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                                     </div>
                                     <div class="guide-item">
                                         <span>🚇</span>
-                                        <span><strong>Transporte Recomendado:</strong> Metrô Estação São Paulo-Morumbi (Linha 4-Amarela) a 15 min de caminhada.</span>
+                                        <span><strong>Transporte Recomendado:</strong> Acesso à Vila Belmiro (Santos/SP) pelas rodovias Anchieta/Imigrantes, a poucos minutos da Rodoviária de Santos.</span>
                                     </div>
                                 </div>
                             </div>
@@ -1714,7 +1694,7 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                                     <div class="step-icon">✓</div>
                                     <div class="step-content">
                                         <div class="step-heading">1. Solicitação Registrada & Cadastro Facial Verificado</div>
-                                        <div class="step-desc">Seus dados foram validados com sucesso e seu reconhecimento facial BePass está vinculado ao MorumBIS.</div>
+                                        <div class="step-desc">Seus dados foram validados com sucesso e seu reconhecimento facial BePass está vinculado à Vila Belmiro.</div>
                                         <div class="step-time">Etapa Concluída</div>
                                     </div>
                                 </div>
@@ -1744,22 +1724,22 @@ HTML_RASTREIO = r"""<!DOCTYPE html>
                         <div class="glass-card invite-card">
                             <div class="invite-header-badge">
                                 <span>🔥</span>
-                                <span>ALTA DEMANDA • JOGO HISTÓRICO NO MORUMBIS</span>
+                                <span>ALTA DEMANDA • CLÁSSICO MAJESTOSO NA VILA BELMIRO</span>
                             </div>
                             <h3 class="invite-title">
                                 <svg width="24" height="16" viewBox="0 0 24 16" style="vertical-align:middle; border-radius:2px; box-shadow:0 1px 4px rgba(0,0,0,0.6); margin-right:5px;" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="5.33" y="0" fill="#E41B17"/><rect width="24" height="5.33" y="5.33" fill="#FFFFFF"/><rect width="24" height="5.33" y="10.66" fill="#000000"/></svg>
                                 <span>Convidar um Amigo Tricolor</span>
                             </h3>
                             <p class="invite-desc">
-                                Conhece algum são-paulino que <strong>ainda está sem ingresso</strong> para o clássico San-São contra o Santos? Com a altíssima procura, os setores estão esgotando! Compartilhe o contato direto da nossa assessoria para que ele também garanta o lugar dele no MorumBIS antes que esgote tudo.
+                                Conhece algum são-paulino que <strong>ainda está sem ingresso</strong> para o Clássico Majestoso contra o Corinthians? Com a altíssima procura, os setores estão esgotando! Compartilhe o contato direto da nossa assessoria para que ele também garanta o lugar dele na Vila Belmiro antes que esgote tudo.
                             </p>
-                            <a href="https://wa.me/5511982429623?text=%F0%9F%87%BE%F0%9F%87%AA+Ol%C3%A1%21+Meu+amigo+me+indicou+a+Tricolor+Tickets+para+conseguir+ingressos+pro+jogo+S%C3%A3o+Paulo+x+Santos+no+MorumBIS%21+Gostaria+de+saber+os+setores+e+valores+dispon%C3%ADveis+para+garantir+o+meu+lugar." target="_blank" class="btn-invite-wpp">
+                            <a href="https://wa.me/5511982429623?text=%F0%9F%87%BE%F0%9F%87%AA+Ol%C3%A1%21+Meu+amigo+me+indicou+a+Tricolor+Tickets+para+conseguir+ingressos+pro+jogo+S%C3%A3o+Paulo+x+Corinthians+na+Vila+Belmiro%21+Gostaria+de+saber+os+setores+e+valores+dispon%C3%ADveis+para+garantir+o+meu+lugar." target="_blank" class="btn-invite-wpp">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFFFFF" style="vertical-align:middle; flex-shrink:0;" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92zM12.04 20.14c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31c-.82-1.31-1.26-2.83-1.26-4.38 0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.54-3.7 8.24-8.23 8.24zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.35-.77-1.85c-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.08 0 1.23.89 2.42 1.02 2.59.12.17 1.76 2.69 4.27 3.77.6.26 1.06.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.3z"/></svg>
                                 <span>WhatsApp: Falar com a Tricolor Tickets</span>
                                 <span>➔</span>
                             </a>
                             <div class="invite-footer-note">
-                                ⭐ O MorumBIS vai ferver. Não deixe nenhum irmão de arquibancada de fora!
+                                ⭐ A Vila Belmiro vai ferver no Majestoso. Não deixe nenhum irmão de arquibancada de fora!
                             </div>
                         </div>
                     </div>
